@@ -23,6 +23,7 @@
             Search by Title<input id="txtSearch" type="text" name="txtSearch" value=""/>
             <input type="submit" id="btnSubmit" name="btAction" value="Search"/>
         </form>
+             <p id="pTag">Thien</p>
         <thucnh:if test="${requestScope.INFO !=null}">
             <thucnh:if test="${not empty requestScope.INFO}" var="checkData">
                 <table border="1">

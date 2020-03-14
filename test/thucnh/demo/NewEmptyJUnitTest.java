@@ -86,9 +86,13 @@ public class NewEmptyJUnitTest {
        // driver.findElement(By.id("txtPassword")).clear();
         driver.findElement(By.id("txtSearch")).sendKeys("thucnh");
        // driver.findElement(By.id("txtPassword")).sendKeys("thucnh");
-        driver.findElement(By.id("btnSubmit")).click();
-        assertEquals("thucnhthucnh", "thucnhthucnh");
+        //driver.findElement(By.id("btnSubmit")).click();
+       WebElement elementName = driver.findElement(By.id("pTag"));
+        String s = elementName.getText();
+        assertEquals("Thien", s);
     }
+    
+    
     
 //    @Test
 //    public void testAdd2() {
