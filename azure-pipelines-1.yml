@@ -5,16 +5,14 @@
 
 trigger:
 - master
-- task: Maven@3
+- task: Ant@1
   inputs:
-    mavenPomFile: 'pom.xml'
+    buildFile: 'build.xml'
+    options: 
     publishJUnitResults: true
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    testResultsFiles: '**/TEST-*.xml'
     javaHomeOption: 'JDKVersion'
-    mavenVersionOption: 'Default'
-    mavenAuthenticateFeed: false
-    effectivePomSkip: false
-    sonarQubeRunAnalysis: false
+
 pool:
   vmImage: 'ubuntu-latest'
 
