@@ -13,7 +13,6 @@ steps:
 - task: Ant@1
   inputs:
     workingDirectory: ''
-    options:'ant -Dlibs.CopyLibs.classpath=C:/apache-ant-1.9.4/lib/org-netbeans-modules-java-j2seproject-copylibstask.jar'
     buildFile: 'build.xml'
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.8'
